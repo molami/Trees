@@ -1,0 +1,177 @@
+/* global */
+body {
+  font-family: "Kiwi Maru", serif;
+}
+.showcase {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background: url(./img/tree0.jpeg);
+  background-size: cover;
+}
+.showcase .content {
+  max-width: 900px;
+  text-align: center;
+}
+.showcase .content h1 {
+  font-size: 3.5em;
+  color: white;
+}
+.showcase .content p {
+  font-size: 1.5em;
+  color: white;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px ;
+  justify-content: space-around;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+header.sticky{
+  background: white;
+  padding: 10px 70px;
+  box-shadow: 0 5px 20px rgb(0, 0, 0,0.5);
+}
+header .logo {
+  color: white;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+header.sticky .logo{
+  color: black;
+}
+header .logo span{
+    color: rgb(57, 175, 21);
+}
+header .nav{
+    position: relative;
+    display: flex;
+}
+header .nav li{
+    list-style: none;
+    margin-left: 20px;
+}
+header .nav li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+header.sticky .nav li a{
+  color: black;
+}
+header .nav li a:hover{
+  color: rgb(57, 175, 21);
+}
+span{
+  color: rgb(57, 175, 21);
+}
+/* gallery */
+/* gallery */
+.gallery {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  margin: 5% auto 0;
+  box-sizing: border-box;
+}
+.image-box {
+  margin: 0 1%;
+  flex-grow: 1;
+  flex-basis: 0;
+  transition: 0.5s;
+}
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.image-box:hover {
+  flex-basis: 50%;
+}
+.active {
+  flex-basis: 50%;
+}
+.gallery:hover .active {
+  flex-basis: 0;
+}
+.image-box:nth-child(1):hover {
+  flex-basis: 50%;
+}
+/* form */
+
+.contact h2{
+  padding-top: 5%;
+  color: white;
+  text-transform: uppercase;
+  transition: all 4s ease-in-out;
+}
+.contact-form p{
+  color: white;
+  font-size: 1.2rem;
+}
+form {
+  align-items: center;
+  margin-top: 25px;
+  transition: all 5s ease-in-out;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+input {
+  height: 45px;
+}
+form .submit {
+  background: rgb(57, 175, 21);
+  border-color: transparent;
+  color: white;
+  font-size: 20px; 
+  font-weight: bold;
+  letter-spacing: 3px;
+  height: 50px;
+  margin-top: 20px;
+}
+form .submit:hover {
+  background: rgb(124, 231, 92);
+  color: white;
+  cursor: pointer;
+}
+.contact{
+  background: linear-gradient(rgba(0,0,50,0.5),rgb(0,0,50,0.5)),url(./img/tree21.jpeg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.socials a{
+  color: white;
+}
+/* footer */
+footer{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 3%;
+}
+footer a{
+  text-decoration: none;
+  color: black;
+}
